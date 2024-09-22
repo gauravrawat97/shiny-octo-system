@@ -1,4 +1,4 @@
-import BlogPage, { getStaticProps } from "./page/[page_index]";
+import BlogPage, { getStaticProps } from "./page/BlogPage";
 
 export default BlogPage;
 export { getStaticProps };
