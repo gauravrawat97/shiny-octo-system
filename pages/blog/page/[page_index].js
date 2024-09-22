@@ -1,6 +1,3 @@
-import fs from "fs";
-import path from "path";
-
 import Layout from "@/components/Layout";
 import Post from "@/components/Post";
 import CategoryList from "@/components/CategoryList";
@@ -27,8 +24,6 @@ export default function BlogPage({ posts, categories }) {
 }
 
 export async function getStaticProps({ params }) {
-  const page = parseInt((params && params.page_index) || 1);
-  const files = fs.readdirSync(path.join("posts"));
   const posts = getPosts();
 
   // get categories for sidebar
